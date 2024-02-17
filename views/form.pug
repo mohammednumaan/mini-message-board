@@ -1,7 +1,8 @@
 extend layout
 
 block content 
-    h1(class="form-header")= "Enter Your Message"
+    h1(class="header")= "Mini Messageboard"
+    h2(class="form-header")= "Post Your Message"
     form(method="post" action="/new" id="msg-form")
         label(id="user-name-label" for="userName") User Name
         input(id="user-name" name="userName" type="text")
