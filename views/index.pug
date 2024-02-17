@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  div(class = "header")
+    h1= title
+  
+  div(class = "messages-container") 
+    div(class = "messages")
+      h3(id = 'msg-intro')= `Welcome To ${title}`
+
+      ul
+        each msg in messages
+          li(class = "message")
+            div 
+              div(class = "msg-info")
+                p(id = "msg-user")= msg.user 
+                p(id = "msg-date")= msg.added
+
+              p(id = "msg-text")= msg.text 
+            
+      

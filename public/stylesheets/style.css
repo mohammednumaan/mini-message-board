@@ -1,0 +1,80 @@
+:root{
+  --colorOne: #222831;
+  --colorTwo: #00ADB5; 
+  --colorThree: #EEEEEE;
+}
+
+body {
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: var(--colorOne);
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+/* HEADER */
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+  background-color: var(--colorOne);
+  color: var(--colorTwo);
+}
+
+/* MESSAGES */
+
+.messages-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.messages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding-left: 0px;
+  width: 600px;
+  border: 2px solid var(--colorThree);
+  border-radius: 20px;
+  box-shadow: var(--colorTwo) 0px 6px 12px -2px, var(--colorTwo) 0px 3px 7px -3px;
+  
+}
+
+.message{
+  margin-bottom: 12px;
+  padding: 10px;
+
+  border: 2px solid var(--colorThree);
+  border-radius: 14px;
+}
+
+.msg-info{
+  display: flex;
+  gap: 10px;
+  color: var(--colorThree);
+}
+
+#msg-intro{
+  color: var(--colorTwo);
+}
+
+#msg-user{
+  color: var(--colorTwo);
+}
+
+#msg-date{
+  opacity: 0.5;
+}
+
+#msg-text{
+  color: var(--colorThree);
+}
